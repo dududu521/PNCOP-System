@@ -102,7 +102,7 @@ def draw_single_series_data(R):
                 x_temp = [object_list[i].x, object_list[j].x]
                 y_temp = [object_list[i].y, object_list[j].y]
                 plt.plot(x_temp, y_temp, c='black')
-    plt.savefig('/Users/mufiye/data-mining/PNCOP_sys/pncop_backend/images/single_time_series.png')
+    plt.savefig('images\multiple_time_series.png')
 
 
 def draw_multiple_series_data(R):
@@ -131,7 +131,7 @@ def draw_multiple_series_data(R):
                     x_temp = [object_list[index][i].x, object_list[index][j].x]
                     y_temp = [object_list[index][i].y, object_list[index][j].y]
                     subplt.plot(x_temp, y_temp, c='black')
-    plt.savefig('/Users/mufiye/data-mining/PNCOP_sys/pncop_backend/images/multiple_time_series.png')
+    plt.savefig('images\multiple_time_series.png')
 
 # def encapsulate_draw_single_series_data(R):
 #     t = MyThread(target=draw_single_series_data, args=R)
